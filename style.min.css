@@ -177,6 +177,7 @@ img {
     position: absolute;
     bottom: 40px;
     left: 50%;
+    bottom: -220%;
     transform: translateX(-50%);
     font-size: 2rem;
     color: var(--primary-color);
