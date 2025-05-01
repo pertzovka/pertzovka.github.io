@@ -5,8 +5,6 @@
     --secondary-color: #f8f9fa;
     --accent-color: #6c5ce7;
     --font-main: 'Inter', sans-serif;
-    
-    /* Градиенты */
     --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-secondary: linear-gradient(to right, #00b09b, #96c93d);
     --gradient-dark: linear-gradient(135deg, #2c3e50 0%, #1a1a2e 100%);
@@ -23,10 +21,42 @@ body {
     font-family: var(--font-main);
     color: var(--text-color);
     line-height: 1.6;
-    background-color: var(--bg-color);
+    background: var(--bg-color);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+.preloader.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
 /* Глобальные анимации */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -121,7 +151,6 @@ body {
 
 @media (max-width: 768px) {
     .nav-list {
-        flex-direction: column;
         position: fixed;
         top: 70px;
         left: 0;
@@ -131,18 +160,16 @@ body {
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
         transform: translateY(-150%);
         transition: transform 0.3s ease;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
     }
     
     .nav-list.active {
         transform: translateY(0);
     }
     
-    .nav-list li {
-        margin: 10px 0;
-    }
-    
-    .menu-toggle {
-        display: block;
+    .diplom embed {
+        height: 250px;
     }
 }
 
