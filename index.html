@@ -2,34 +2,24 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Портфолио Владимира Степанова - дизайнера и разработчика">
-    <meta name="theme-color" content="#0984e3">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Владимир Степанов | Дизайнер & Разработчик</title>
     
     <!-- Favicon -->
     <link rel="icon" href="assets/favicon.ico" sizes="any">
-    <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     
-    <!-- Стили -->
-    <link rel="stylesheet" href="style.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <!-- Предзагрузка -->
-    <link rel="preload" href="style.min.css" as="style">
-    <link rel="preload" href="script.min.js" as="script">
+    <link rel="stylesheet" href="style.min.css">
 </head>
 <body>
-    
-    <!-- Хедер -->
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <a href="#" class="logo" aria-label="На главную">VS</a>
+                <a href="#" class="logo">VS</a>
                 <ul class="nav-list">
                     <li><a href="#about" class="nav-link">Обо мне</a></li>
                     <li><a href="#work" class="nav-link">Работы</a></li>
@@ -37,39 +27,39 @@
                     <li><a href="#certificates" class="nav-link">Сертификаты</a></li>
                     <li><a href="#contact" class="nav-link">Контакты</a></li>
                 </ul>
-                <button class="menu-toggle" aria-label="Меню" aria-expanded="false">
-                    <i class="fas fa-bars"></i>
+                <button class="menu-toggle">
+                    <span class="menu-icon"></span>
                 </button>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Герой -->
+        <!-- Hero Section -->
         <section class="hero">
             <div class="container">
                 <h1>Привет, я <span class="name">Владимир Степанов</span></h1>
                 <p class="subtitle">Дизайнер & Программист & Верстальщик</p>
-                <a href="#about" class="scroll-indicator" aria-label="Прокрутить вниз">
+                <a href="#about" class="scroll-indicator">
                     <i class="fas fa-chevron-down"></i>
                 </a>
             </div>
         </section>
 
-        <!-- Обо мне -->
-        <section id="about" class="section about">
+        <!-- About Section -->
+        <section id="about" class="section">
             <div class="container">
                 <h2>Обо мне</h2>
                 <div class="about-content">
-                    <p>Меня зовут Владимир, мне 22 года. Я начинающий <strong>дизайнер, верстальщик и программист</strong> с сильной теоретической базой, полученной через углублённое изучение профильных курсов.</p>
-                    <p>Сейчас активно ищу возможности для практического применения знаний. Готов к стажировкам, Junior-позициям и интересным коллаборациям. Быстро учусь, ответственно подхожу к задачам и горю желанием развиваться в профессиональной среде.</p>
-                    <p>Владею на продвинутом уровне: <strong>HTML, CSS, JavaScript, Python, C#</strong>. Особенно интересны проекты, где можно совмещать дизайн, верстку и программирование.</p>
+                    <p>Меня зовут Владимир, мне 22 года. Я начинающий <strong>дизайнер, верстальщик и программист</strong> с сильной теоретической базой.</p>
+                    <p>Сейчас активно ищу возможности для практического применения знаний. Готов к стажировкам, Junior-позициям и интересным коллаборациям.</p>
+                    <p>Владею на продвинутом уровне: <strong>HTML, CSS, JavaScript, Python, C#</strong>.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Навыки -->
-        <section id="skills" class="section skills">
+        <!-- Skills Section -->
+        <section id="skills" class="section">
             <div class="container">
                 <h2>Мои навыки</h2>
                 <div class="skills-grid">
@@ -79,7 +69,16 @@
                             <span>95%</span>
                         </div>
                         <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%"></div>
+                            <div class="skill-progress" style="width: 0"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Photoshop</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 0"></div>
                         </div>
                     </div>
                     <div class="skill-item">
@@ -88,7 +87,7 @@
                             <span>85%</span>
                         </div>
                         <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
+                            <div class="skill-progress" style="width: 0"></div>
                         </div>
                     </div>
                     <div class="skill-item">
@@ -97,99 +96,94 @@
                             <span>80%</span>
                         </div>
                         <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
+                            <div class="skill-progress" style="width: 0"></div>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>C#</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%"></div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
 
-        <!-- Сертификаты -->
-        <section id="certificates" class="section certificates">
-            <div class="container">
-                <h2>Мои сертификаты</h2>
-                <button class="toggle-btn" id="toggleButton">
-                    <span>Показать сертификаты</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                
-                <div class="diplom" id="diplom">
-                   <div class="certificate-item">
-                        <object data="files/certificate1.pdf" type="application/pdf" width="100%" height="400px">
-                            <img src="files/certificate1.jpg" alt="Сертификат по веб-разработке" class="certificate-image">
-                            <p class="pdf-fallback">
-                                <a href="files/certificate1.pdf" download>Скачать сертификат (PDF)</a>
-                            </p>
-                        </object>
-                        <p class="certificate-title">Основы веб-разработки</p>
+                <!-- Certificates Section -->
+                <section id="certificates" class="section">
+                    <div class="container">
+                        <h2>Мои сертификаты</h2>
+                        <button class="toggle-btn" id="toggle-certs" aria-expanded="false" aria-controls="certificates-container">
+                            <span>Показать сертификаты</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        
+                        <div class="certificates-container" id="certificates-container" hidden>
+                            <div class="certificates-grid">
+                                <div class="certificate-item">
+                                    <div class="pdf-container">
+                                        <embed src="files/certificate1.pdf" type="application/pdf" class="certificate-pdf">
+                                        <a href="files/certificate1.pdf" target="_blank" class="pdf-fullscreen" title="Открыть в полном размере">
+                                            <i class="fas fa-expand"></i>
+                                        </a>
+                                    </div>
+                                    <p class="certificate-title">Основы веб-разработки</p>
+                                </div>
+                                
+                                <div class="certificate-item">
+                                    <div class="pdf-container">
+                                        <embed src="files/certificate2.pdf" type="application/pdf" class="certificate-pdf">
+                                        <a href="files/certificate2.pdf" target="_blank" class="pdf-fullscreen" title="Открыть в полном размере">
+                                            <i class="fas fa-expand"></i>
+                                        </a>
+                                    </div>
+                                    <p class="certificate-title">Основы веб-разработки (продвинутый)</p>
+                                </div>
+                                <div class="certificate-item">
+                                    <div class="pdf-container">
+                                        <embed src="files/certificate3.pdf" type="application/pdf" class="certificate-pdf">
+                                        <a href="files/certificate3.pdf" target="_blank" class="pdf-fullscreen" title="Открыть в полном размере">
+                                            <i class="fas fa-expand"></i>
+                                        </a>
+                                    </div>
+                                    <p class="certificate-title">Основы дизайна (продвинутый)</p>
+                                </div>
+                                <div class="certificate-item">
+                                    <div class="pdf-container">
+                                        <embed src="files/certificate4.pdf" type="application/pdf" class="certificate-pdf">
+                                        <a href="files/certificate4.pdf" target="_blank" class="pdf-fullscreen" title="Открыть в полном размере">
+                                            <i class="fas fa-expand"></i>
+                                        </a>
+                                    </div>
+                                    <p class="certificate-title">Основы дизайна (продвинутый)</p>
+                                </div>
+                                <div class="certificate-item">
+                                    <div class="pdf-container">
+                                        <embed src="files/certificate5.pdf" type="application/pdf" class="certificate-pdf">
+                                        <a href="files/certificate5.pdf" target="_blank" class="pdf-fullscreen" title="Открыть в полном размере">
+                                            <i class="fas fa-expand"></i>
+                                        </a>
+                                    </div>
+                                    <p class="certificate-title">Основы програмирования</p>
+                                </div>
+                                <div class="certificate-item">
+                                    <div class="pdf-container">
+                                        <embed src="files/certificate6.pdf" type="application/pdf" class="certificate-pdf">
+                                        <a href="files/certificate6.pdf" target="_blank" class="pdf-fullscreen" title="Открыть в полном размере">
+                                            <i class="fas fa-expand"></i>
+                                        </a>
+                                    </div>
+                                    <p class="certificate-title">Основы програмирования (продвинутый)</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="certificate-item">
-                        <object data="files/certificate2.pdf" type="application/pdf" width="100%" height="400px">
-                            <img src="files/certificate2.jpg" alt="Сертификат по JavaScript" class="certificate-image">
-                            <p class="pdf-fallback">
-                                <a href="files/certificate2.pdf" download>Скачать сертификат (PDF)</a>
-                            </p>
-                        </object>
-                        <p class="certificate-title">Продвинутый JavaScript</p>
-                    </div>
-                    <div class="certificate-item">
-                        <object data="files/certificate3.pdf" type="application/pdf" width="100%" height="400px">
-                            <img src="files/certificate3.jpg" alt="Сертификат по веб-разработке" class="certificate-image">
-                            <p class="pdf-fallback">
-                                <a href="files/certificate3.pdf" download>Скачать сертификат (PDF)</a>
-                            </p>
-                        </object>
-                        <p class="certificate-title">Основы веб-разработки</p>
-                    </div>
-                    <div class="certificate-item">
-                        <object data="files/certificate4.pdf" type="application/pdf" width="100%" height="400px">
-                            <img src="files/certificate4.jpg" alt="Сертификат по веб-разработке" class="certificate-image">
-                            <p class="pdf-fallback">
-                                <a href="files/certificate4.pdf" download>Скачать сертификат (PDF)</a>
-                            </p>
-                        </object>
-                        <p class="certificate-title">Основы веб-разработки</p>
-                    </div>
-                    <div class="certificate-item">
-                        <object data="files/certificate5.pdf" type="application/pdf" width="100%" height="400px">
-                            <img src="files/certificate5.jpg" alt="Сертификат по веб-разработке" class="certificate-image">
-                            <p class="pdf-fallback">
-                                <a href="files/certificate5.pdf" download>Скачать сертификат (PDF)</a>
-                            </p>
-                        </object>
-                        <p class="certificate-title">Основы веб-разработки</p>
-                    </div>
-                    <div class="certificate-item">
-                        <object data="files/certificate6.pdf" type="application/pdf" width="100%" height="400px">
-                            <img src="files/certificate6.jpg" alt="Сертификат по веб-разработке" class="certificate-image">
-                            <p class="pdf-fallback">
-                                <a href="files/certificate6.pdf" download>Скачать сертификат (PDF)</a>
-                            </p>
-                        </object>
-                        <p class="certificate-title">Основы веб-разработки</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <!-- Работы -->
-        <section id="work" class="section work">
+        <!-- Work Section -->
+        <section id="work" class="section">
             <div class="container">
                 <h2>Мои работы</h2>
                 <div class="work-grid">
                     <div class="work-item">
                         <div class="work-item-content">
                             <h3>Этот сайт-портфолио</h3>
-                            <p>Адаптивный сайт с современным дизайном, написанный на HTML5, стилизованный с помощью CSS3 и анимированный с использованием JavaScript.</p>
+                            <p>Адаптивный сайт с современным дизайном.</p>
                             <div class="tech-tags">
                                 <span>HTML5</span>
                                 <span>CSS3</span>
@@ -197,19 +191,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="work-item coming-soon">
+                    <div class="work-item">
                         <div class="work-item-content">
                             <h3>Ваш проект</h3>
-                            <p>Очень жду возможности создать для вас современный и функциональный сайт с индивидуальным подходом!</p>
-                            <div class="cta-button">Обсудить проект</div>
+                            <p>Очень жду возможности создать для вас сайт!</p>
+                            <div class="cta-button" id="contact-btn">Обсудить проект</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Контакты -->
-        <section id="contact" class="section contact">
+        <!-- Contact Section -->
+        <!-- <section id="contact" class="section">
+            <div class="container">
+                <h2>Свяжитесь со мной</h2>
+                <a href="mailto:for.work.html.css@gmail.com" class="email-link">
+                    <i class="fas fa-envelope"></i> for.work.html.css@gmail.com
+                </a>
+                <div class="social-links">
+                    <a href="https://t.me/Zaherevshiy" target="_blank">
+                        <i class="fab fa-telegram"></i> Telegram
+                    </a>
+                    <a href="https://vk.com/pertzovka" target="_blank">
+                        <i class="fab fa-vk"></i> VK
+                    </a>
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <section id="contact" class="section">
             <div class="container">
                 <h2>Свяжитесь со мной</h2>
                 <p>Готовы к сотрудничеству? Напишите мне:</p>
@@ -217,19 +232,15 @@
                     <i class="fas fa-envelope"></i> for.work.html.css@gmail.com
                 </a>
                 <div class="social-links">
-                    <a href="https://t.me/Zaherevshiy" target="_blank" rel="noopener noreferrer">
+                    <a href="https://t.me/Zaherevshiy" target="_blank">
                         <i class="fab fa-telegram"></i> Telegram
                     </a>
-                    <a href="https://vk.com/pertzovka" target="_blank" rel="noopener noreferrer">
+                    <a href="https://vk.com/pertzovka" target="_blank">
                         <i class="fab fa-vk"></i> VK
                     </a>
                 </div>
             </div>
         </section>
-    </main>
-
-    <!-- Футер -->
-    <footer class="footer">
         <div class="container">
             <p>© <span id="current-year">2023</span> Владимир Степанов. Все права защищены.</p>
             <a href="#" class="back-to-top" aria-label="Наверх">
@@ -238,7 +249,6 @@
         </div>
     </footer>
 
-    <!-- Скрипты -->
-    <script src="js/script.min.js" defer></script>
+    <script src="script.min.js"></script>
 </body>
 </html>
