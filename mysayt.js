@@ -26,6 +26,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    const menuToggle = document.createElement('div');
+menuToggle.className = 'menu-toggle';
+menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+document.querySelector('.nav').appendChild(menuToggle);
+
+menuToggle.addEventListener('click', function() {
+    document.querySelector('.nav-list').classList.toggle('active');
+});
 
     // ==================== Анимации при скролле ====================
     const animateOnScroll = function() {
